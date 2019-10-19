@@ -71,7 +71,7 @@ if (isDev) {
   });
 }
 
-app.listen(port, '0.0.0.0', err => {
+app.listen(process.env.PORT, '0.0.0.0', err => {
   if (err) {
     console.log(err);
   }
